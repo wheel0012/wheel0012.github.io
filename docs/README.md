@@ -1,235 +1,179 @@
+# Taejun Lee
+
+Undergraduate student in Electronic and Electrical Engineering at Sungkyunkwan University.  
+My interests lie in **computer architecture, performance modeling, GPU/NPU architecture, memory hierarchy, HW/SW co-design, and post-Moore computing**.
+
+I am currently working on simulator-based analysis of GPU warp scheduling and arbitration policies using the **Vortex GPGPU simulator**, focusing on workload-dependent performance bottlenecks.
+
 ---
-layout: home
-title: Jekyll Gitbook Theme
-permalink: /
+
+## Contact
+
+- **Email:** wheel001212@gmail.com
+- **GitHub:** [github.com/wheel0012](https://github.com/wheel0012)
+<!-- **CV:** [CV PDF](./Taejun_Lee_CV.pdf) ...optional --> 
+
 ---
 
-Make Jelly site have a GitBook look!
+## Research Interests
 
-## Demo
+- Computer Architecture
+- Performance Modeling
+- GPU/NPU Architecture
+- Memory Hierarchy
+- HW/SW Co-design
+- Post-Moore Computing
+- Domain-specific Accelerator Architecture
+- Systems Software
+- Digital Integrated Circuits
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
-
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
-
-## Why Jekyll with GitBook
-
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
-
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
-
-## How to Get Started
-
-This theme can be used just as other [Jekyll themes][1] and support [remote theme][12],
-see [the official guide][13] as well.
-
-You can introduce this jekyll theme into your own site by either
-
-- [Fork][3] this repository and add your markdown posts to the `_posts` folder.
-- Use as a remote theme in your [`_config.yml`][14](just like what we do for this
-  site itself),
-
-```yaml
-remote_theme: sighingnow/jekyll-gitbook
-```
-
-### Deploy Locally with Jekyll Serve
-
-This theme can be ran locally using Ruby and Gemfiles.
-
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
-
-## Full-text search
-
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
-
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
-```
-
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./assets/gitbook/rouge/](./assets/gitbook/rouge/).
-
-## How to generate TOC
-
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-```
-
-## Google Analytics, etc.
-
-The jekyll-gitboook theme supports embedding the [Google Analytics][7], [CNZZ][8] and [Application Insights][9] website analytical tools with the following
-minimal configuration in `_config.yaml`:
-
-```yaml
-tracker:
-  google_analytics: "<YOUR GOOGLE ANALYTICS KEY, e.g, UA-xxxxxx-x>"
-```
-
-Similarly, CNZZ can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  cnzz: "<YOUR CNZZ ANALYTICS KEY, e.g., xxxxxxxx>"
-```
-
-Application Insights can be added with the following configuration in `_config.yaml`
-
-```yaml
-tracker:
-  application_insights: "<YOUR APPLICATION INSIGHTS CONNECTION STRING>"
-```
-
-## Disqus comments
-
-[Disqus](https://disqus.com/) comments can be enabled by adding the following configuration in `_config.yaml`:
-
-```yaml
-disqushandler: "<YOUR DISQUS SHORTNAME>"
-```
-
-## Jekyll collections
-
-Jekyll's [collections][15] is supported to organize the pages in a more fine-grained manner, e.g.,
-
-```yaml
-collections:
-  pages:
-    output: true
-    sort_by: date
-    permalink: /:collection/:year-:month-:day-:title:output_ext
-  others:
-    output: true
-    sort_by: date
-    permalink: /:collection/:year-:month-:day-:title:output_ext
-```
-
-An optional `ordered_collections` key can be added to `_config.yaml` to control the order of collections in the sidebar:
-
-```yaml
-ordered_collections:
-  - posts
-  - pages
-  - others
-```
-
-If not specified, the order of collections would be decided by Jekyll. Note that the key `posts` is a special collection
-that indicates the `_posts` pages of Jekyll.
-
-## Extra StyleSheet or Javascript elements
-
-You can add extra CSS or JavaScript references using configuration collections:
-
-- extra_css: for additional style sheets. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_header_js: for additional scripts to be included in the `<head>` tag, after the `extra_css` has been added. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-- extra_footer_js: for additional scripts to be included at the end of the HTML document, just before the site tracking script. If the url does not start by http, the path must be relative to the root of the site, without a starting `/`.
-
-## Customizing font settings
-
-The fonts can be customized by modifying the `.book.font-family-0` and `.book.font-family-1` entry in [`./assets/gitbook/custom.css`][10],
-
-```css
-.book.font-family-0 {
-    font-family: Georgia, serif;
-}
-.book.font-family-1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-```
-
-## Tips, Warnings and Dangers blocks
-
-The jekyll-gitbook theme supports customized kramdown attributes (`{: .block-tip }`, `{: .block-warning }`,
-`{: .block-danger }`) like that displayed in [the discord.js website][11]. The marker can be used like
-
-```markdown
-> ##### TIP
->
-> This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> this or a similar version after installation.
-{: .block-tip }
-```
-
-Rendered page can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-06-30-tips_warnings_dangers.html)
-
-## Cover image inside pages
-
-The jekyll-gitbook theme supports adding a cover image to a specific page by adding
-a `cover` field to the page metadata:
-
-```diff
-  ---
-  title: Page with cover image
-  author: Tao He
-  date: 2022-05-24
-  category: Jekyll
-  layout: post
-+ cover: /assets/jekyll-gitbook/dinosaur.gif
-  ---
-```
-
-The effect can be previewed from
-
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2022-05-24-page_cover.html)
-
-## Diagrams with mermaid.js
-
-This jekyll-theme supports [mermaid.js](https://mermaid.js.org/) to render diagrams
-in markdown.
-
-To enable the mermaid support, you need to set `mermaid: true` in the front matter
-of your post.
-
-```markdown
 ---
-mermaid: true
+
+## Education
+
+### Sungkyunkwan University  
+**B.S. in Electrical and Computer Engineering**  
+Transferred in: [2024.03]  
+Expected Graduation: Feb. 2026  
+GPA: **4.13 / 4.50**
+
+### Korea National Open University  
+**Computer Science Coursework**  
+[2019.03 – 2021.12]  
+Completed undergraduate coursework in computer science before transferring to Sungkyunkwan University.
+
 ---
-```
 
-The example can be previewed from
+## Technical Background
 
-[https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html](https://sighingnow.github.io/jekyll-gitbook/jekyll/2023-08-31-mermaid.html)
+### Sudo Electric Technical High School  
+**Energy Electronics & Control**  
+[2016.03 – 2019.02]
 
-## License
+- Completed technical training in electronics, control systems, and industrial electrical systems.
+- Developed an early foundation in hardware-adjacent systems, electrical control, and embedded/industrial technology.
 
-This work is open sourced under the Apache License, Version 2.0.
+---
 
-Copyright 2019 Tao He.
+## Current Projects
 
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
-[7]: https://analytics.google.com/analytics/web/
-[8]: https://www.cnzz.com/
-[9]: https://docs.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview
-[10]: https://github.com/sighingnow/jekyll-gitbook/blob/master/gitbook/custom.css
-[11]: https://discordjs.guide/popular-topics/canvas.html#setting-up-napi-rs-canvas
-[12]: https://rubygems.org/gems/jekyll-remote-theme
-[13]: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-[14]: https://github.com/sighingnow/jekyll-gitbook/blob/master/_config.yml
-[15]: https://jekyllrb.com/docs/collections/
+### Vortex GPGPU Simulator-based Scheduling and Memory Behavior Analysis  
+**Undergraduate Research Project** | 2026.03 – Present
+
+- Comparing RR, GTO, gCAWS, and CCWS-style warp scheduling and arbitration policies using the Vortex GPGPU simulator.
+- Analyze IPC, cache locality, memory stalls, and workload-dependent performance bottlenecks.
+- Study cache/memory-aware scheduling ideas such as CCWS and CAWA-style policies.
+- Evaluate several Rodinia workloads with different memory access patterns, including BFS, HotSpot, Streamcluster, and other GPU benchmarks.
+- Interested in extending this work toward performance modeling, accelerator architecture, and memory hierarchy analysis.
+
+### 77GHz mmWave Radar + Vision-based Gesture Recognition  
+**Capstone Design Project** | 2026.03 – Present
+
+- Built a multimodal gesture recognition pipeline using 77GHz mmWave radar and vision-based sensing.
+- Processed radar sequence data and trained frame-stacked CNN, CNN+LSTM, BiLSTM, and TCN models for gesture classification.
+- Studied the robustness of radar-based gesture recognition under vision-limited environments such as occlusion, smoke, or dust.
+- Gained experience in sensor data processing, AI model training, and end-to-end system integration.
+
+---
+
+## Selected Projects
+
+### Linux Kernel Scheduler Module
+
+- Implemented FIFO, SJF, STCF, and Round-Robin scheduling policies in a Linux kernel module.
+- Used spinlock-based synchronization to protect shared scheduler state under concurrent syscall access.
+- Evaluated response time, turnaround time, and fairness across multi-process or multi-threaded workloads.
+
+### Unix Shell and System Programming
+
+- Implemented a custom shell supporting process creation, pipelines, redirection, and job control.
+- Handled Unix signals such as `SIGCHLD` and `SIGINT`.
+- Implemented Unix file I/O utilities with buffer management and error handling.
+
+### Compiler Symbol Table and Scope Management
+
+- Implemented lexical scoping and symbol table management for a C-like language using ANTLR4 and C++.
+- Supported nested scopes, name resolution, and declaration-property tracking.
+- Designed scope management logic for resolving identifiers across nested lexical scopes.
+
+### Digital Logic / Verilog Projects
+
+- Designed and verified digital logic components using Verilog and Vivado.
+- Implemented modules on Artix7 such as register files, ALU-related logic, and microprocessor-level components.
+- Gained experience in RTL design, simulation, and debugging.
+
+---
+
+## Industry Experience
+
+### Software / Embedded Systems Engineer  
+**Xisom Co., Ltd.** | 2019.01 – 2022.02
+
+- Developed application and embedded software for IoT-based industrial systems.
+- Worked on device communication, system integration, and hardware-adjacent debugging.
+- Designed and implemented a lightweight expression interpreter that evaluated expressions stored in an RDB and forwarded transformed results to a NoSQL-backed IoT service pipeline.
+- Gained practical experience in embedded software, communication protocols, heterogeneous data systems, and hardware-software interaction.
+
+---
+
+## Technical Skills
+
+- **Languages:** C, C++, C#, Python, Verilog, MATLAB
+- **Tools:** Linux, Git, Vivado, Vortex GPGPU Simulator, SimpleScalar
+- **Architecture / Systems:** Computer Architecture, Operating Systems, GPU Architecture, Digital Logic Design, Performance Analysis
+- **Other Experience:** Embedded Software, Communication Protocols
+
+---
+
+## Relevant Coursework
+
+### Current Coursework
+
+- Computer Systems: A Programmer's Perspective
+- Microprocessor
+- Signals and Systems
+- Advanced Semiconductor Design Technology
+- Capstone Design Project
+- Undergraduate Research / Independent Research
+
+### Computer Science / Systems
+
+- Data Structures
+- Operating Systems
+- UNIX System
+- C/C++ Programming
+- Java Programming
+- Cloud Computing
+- Artificial Intelligence
+- Computer Security
+
+### Computer Architecture / Hardware
+
+- Digital Logic
+- Digital Systems
+- Microprocessor Laboratory
+- Circuit Theory 1, 2
+- Electronic Circuits 1
+- Physical Electronics
+- Electromagnetics
+
+### Mathematics / AI
+
+- Engineering Mathematics 1, 2
+- Discrete Mathematics
+- Machine Learning
+- Big Data and AI-based Systems
+
+> Some coursework includes courses completed before transfer or through prior enrollment.
+
+---
+
+## Certifications
+
+- 정보처리기사(Engineer Information Processing), 2023.06
+
+---
+
+## English Proficiency
+
+- New TEPS: **377 / 600**
