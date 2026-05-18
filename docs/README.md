@@ -1,7 +1,7 @@
 # Taejun Lee
 
 Undergraduate student in Electronic and Electrical Engineering at Sungkyunkwan University.  
-My interests lie in **computer architecture, performance modeling, GPU/NPU architecture, memory hierarchy, HW/SW co-design, and post-Moore computing**.
+My interests lie in **computer architecture, performance modeling, processor architecture, memory hierarchy, HW/SW co-design, and post-Moore computing**.
 
 I am currently working on simulator-based analysis of GPU warp scheduling and arbitration policies using the **Vortex GPGPU simulator**, focusing on workload-dependent performance bottlenecks.
 
