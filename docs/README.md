@@ -47,11 +47,8 @@ Completed undergraduate coursework in computer science before transferring to Su
 ## Technical Background
 
 ### Sudo Electric Technical High School  
-**Energy Electronics & Control**  
+**DEPT.OF ENERGY ELECTRONIC CONTROL**  
 [2016.03 – 2019.02]
-
-- Completed technical training in electronics, control systems, and industrial electrical systems.
-- Developed an early foundation in hardware-adjacent systems, electrical control, and embedded/industrial technology.
 
 ---
 
