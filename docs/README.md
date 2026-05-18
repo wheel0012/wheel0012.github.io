@@ -34,7 +34,7 @@ I am currently working on simulator-based analysis of GPU warp scheduling and ar
 ### Sungkyunkwan University  
 **B.S. in Electrical and Computer Engineering**  
 Transferred in: [2024.03]  
-Expected Graduation: Feb. 2026  
+Expected Graduation: Feb. 2027  
 GPA: **4.13 / 4.50**
 
 ### Korea National Open University  
