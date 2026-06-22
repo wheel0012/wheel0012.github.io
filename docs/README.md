@@ -1,3 +1,9 @@
+---
+layout: home
+title: Taejun Lee
+permalink: /
+---
+
 # Taejun Lee
 
 Undergraduate student in Electronic and Electrical Engineering at Sungkyunkwan University.  
