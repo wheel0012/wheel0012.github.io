@@ -1,1 +1,2 @@
 *.pdf
+!docs/assets/slides/*.pdf

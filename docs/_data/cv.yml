@@ -1,0 +1,107 @@
+profile:
+  name: Taejun Lee
+  eyebrow: Computer Architecture · Systems
+  summary: >-
+    Undergraduate student in Electronic and Electrical Engineering at
+    Sungkyunkwan University with hands-on research experience in GPU scheduling,
+    memory systems, and accelerator optimization across the hardware–software stack.
+  email: wheel001212@gmail.com
+  github_label: github.com/wheel0012
+  github_url: https://github.com/wheel0012
+  education_short: SKKU EEE
+  gpa_short: 4.22 / 4.50
+  focus_short: GPU · Accelerators · Memory
+
+research_interests:
+  - Computer Architecture
+  - GPU & Accelerator Architecture
+  - Memory Systems
+  - Performance Modeling
+  - HW/SW Co-design
+
+education:
+  - institution: Sungkyunkwan University
+    dates: Mar. 2024 – Present
+    degree: B.S. in Electronic and Electrical Engineering
+    note: Expected Feb. 2027
+    gpa: 4.22 / 4.50
+    credits: 64 credits
+  - institution: Korea National Open University
+    dates: Mar. 2019 – Dec. 2021
+    degree: Undergraduate Coursework in Computer Science
+
+research_experience:
+  - title: GPU Scheduling and Memory-System Analysis
+    date: Spring 2026
+    type: Undergraduate Research Project (URP) · Vortex GPGPU Simulator
+    slides_url: /assets/slides/2026spring_URP_GPU_sched.pdf
+    bullets:
+      - Evaluated RR, GTO, gCAWS, and CCWS-inspired warp-scheduling and arbitration policies.
+      - Characterized IPC, cache locality, and memory stalls across Rodinia workloads with different memory-access patterns.
+      - Investigated cache- and memory-aware scheduling policies for workload-dependent bottlenecks.
+  - title: 77 GHz mmWave Radar and Vision-based Gesture Recognition
+    date: Spring 2026
+    type: Capstone Design Project
+    bullets:
+      - Developed a multimodal gesture-recognition pipeline using 77 GHz mmWave radar and vision data.
+      - Processed radar sequences and trained frame-stacked CNN, CNN–LSTM, BiLSTM, and TCN models for vision-limited environments.
+  - title: Multithreading Models in SimpleScalar
+    date: Summer 2025
+    type: Project
+    bullets:
+      - Implemented FGMT, CGMT, and SMT in sim-outorder.c.
+      - Evaluated and compared the performance of the three multithreading models using SimpleScalar.
+  - title: Exploring Reconfigurable CPU Architecture and Heterogeneous Integrated Circuits
+    date: Winter 2024
+    type: Project
+    bullets:
+      - Explored reconfigurable CPU architectures and heterogeneous integrated-circuit technologies.
+
+awards:
+  - title: First Prize · BOS Semiconductors Track
+    date: "2026"
+    event: 2026 NPU Challenge
+    organization: AI Semiconductor Innovation Research Institute, Sungkyunkwan University
+    featured: true
+    slides_url: /assets/slides/2026npuchallenge_NPUisAllYouNeed_final_presentation.pdf
+    bullets:
+      - Optimized the inference pipeline and kernels for Llama 3.2 3B on the Tenstorrent Tensix-based Eagle-N NPU.
+      - Achieved 2.1× baseline throughput (tokens/s) through end-to-end performance optimization.
+      - Built on existing FlashAttention and paged KV cache implementations while exploring KV cache compression.
+    todo: Replace 2.1× with the final measured value; add team name, award date, team size, individual role, and optimization details.
+  - title: Academic Excellence Scholarship
+    date: Spring 2026
+    organization: School of Electronic and Electrical Engineering · College of Information and Communication Engineering · Sungkyunkwan University
+  - title: Dean’s List · Academic Excellence Award
+    date: Spring 2024
+    organization: College of Information and Communication Engineering · Sungkyunkwan University
+
+industry_experience:
+  - role: Software / Embedded Systems Engineer
+    company: Xisom Co., Ltd.
+    dates: Jan. 2019 – Feb. 2022
+    bullets:
+      - Developed application and embedded software for IoT-based industrial systems, including device communication and hardware-adjacent debugging.
+      - Built a lightweight expression interpreter that evaluated RDB-stored expressions and forwarded transformed results to a NoSQL-backed IoT pipeline.
+
+projects:
+  - title: Linux Kernel Scheduler
+    summary: FIFO, SJF, STCF, and round-robin policies with spinlock-protected state; evaluated response time, turnaround time, and fairness.
+  - title: Digital Logic & RTL
+    summary: Verilog register files and ALU-related logic designed and verified on an Artix-7 FPGA using Vivado.
+  - title: Unix Shell
+    summary: Process creation, pipelines, redirection, job control, and Unix signal handling.
+  - title: Compiler Components
+    summary: Nested scopes, name resolution, and symbol-table management for a C-like language using ANTLR4 and C++.
+
+skills:
+  - label: Programming
+    values: C · C++ · C# · Python · Verilog · MATLAB
+  - label: Tools & Platforms
+    values: Linux · Git · Vivado · Vortex · SimpleScalar · Artix-7
+
+coursework: Computer Systems · Microprocessor · Signals and Systems · Advanced Semiconductor Design · Operating Systems · Data Structures · Digital Logic and Digital Systems · Circuit Theory and Electronic Circuits
+
+english:
+  label: New TEPS
+  score: 377 / 600
