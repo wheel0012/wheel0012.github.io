@@ -1,2 +1,4 @@
 *.pdf
 !docs/assets/slides/*.pdf
+node_modules/
+artifacts/

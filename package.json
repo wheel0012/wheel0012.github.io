@@ -1,0 +1,15 @@
+{
+  "name": "taejun-lee-cv",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "cv:setup": "playwright install --with-deps chromium",
+    "cv:check": "node scripts/cv-print.mjs check",
+    "cv:pdf": "node scripts/cv-print.mjs pdf",
+    "cv:fit": "node scripts/cv-print.mjs fit"
+  },
+  "devDependencies": {
+    "pdf-lib": "1.17.1",
+    "playwright": "1.62.1"
+  }
+}

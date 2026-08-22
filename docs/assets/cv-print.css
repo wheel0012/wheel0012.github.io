@@ -310,6 +310,11 @@ a {
     background: #fff;
   }
 
+  body {
+    font-size: 10px;
+    line-height: 1.36;
+  }
+
   .print-actions {
     display: none;
   }
@@ -318,8 +323,37 @@ a {
     width: auto;
     min-height: auto;
     margin: 0;
-    padding: 12mm 14mm 13mm;
+    padding: 9mm 13mm;
     box-shadow: none;
+  }
+
+  .print-header {
+    padding-bottom: 8px;
+  }
+
+  .print-section {
+    padding-top: 7px;
+  }
+
+  .print-section__body,
+  .print-details {
+    padding-top: 6px;
+  }
+
+  .print-entry + .print-entry {
+    margin-top: 6px;
+  }
+
+  .print-entry--award + .print-entry--award {
+    margin-top: 5px;
+  }
+
+  .print-projects {
+    gap: 6px 14px;
+  }
+
+  .print-details {
+    gap: 3px 12px;
   }
 
   a {
