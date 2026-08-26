@@ -323,7 +323,7 @@ a {
     width: auto;
     min-height: auto;
     margin: 0;
-    padding: 9mm 13mm;
+    padding: 8mm 13mm;
     box-shadow: none;
   }
 
@@ -332,7 +332,7 @@ a {
   }
 
   .print-section {
-    padding-top: 7px;
+    padding-top: 6.5px;
   }
 
   .print-section__body,
@@ -342,6 +342,10 @@ a {
 
   .print-entry + .print-entry {
     margin-top: 6px;
+  }
+
+  .print-entry li {
+    margin: 0;
   }
 
   .print-entry--award + .print-entry--award {

@@ -60,7 +60,7 @@ hide_title: true
         </div>
         <p class="cv-entry__meta">{{ item.degree | escape }}{% if item.note %} · {{ item.note | escape }}{% endif %}</p>
         {% if item.gpa %}
-        <p class="cv-entry__metric"><strong>GPA {{ item.gpa | escape }}</strong><span>{{ item.credits | escape }}</span></p>
+        <p class="cv-entry__metric"><strong>GPA {{ item.gpa | escape }}</strong>{% if item.credits %}<span>{{ item.credits | escape }}</span>{% endif %}</p>
         {% endif %}
       </article>
       {% endfor %}

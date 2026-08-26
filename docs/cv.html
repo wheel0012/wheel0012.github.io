@@ -33,7 +33,7 @@ permalink: /cv/
           <time>{{ item.dates | escape }}</time>
         </div>
         <p>{{ item.degree | escape }}{% if item.note %} · {{ item.note | escape }}{% endif %}</p>
-        {% if item.gpa %}<p class="print-detail"><strong>GPA: {{ item.gpa | escape }}</strong> · {{ item.credits | escape }}</p>{% endif %}
+        {% if item.gpa %}<p class="print-detail"><strong>GPA: {{ item.gpa | escape }}</strong>{% if item.credits %} · {{ item.credits | escape }}{% endif %}</p>{% endif %}
       </article>
       {% endfor %}
     </div>
