@@ -143,21 +143,6 @@ hide_title: true
     {% endfor %}
   </section>
 
-  <section class="cv-section">
-    <div class="cv-section__heading">
-      <p>Implementation</p>
-      <h2 id="selected-projects">Selected Projects</h2>
-    </div>
-    <div class="cv-projects">
-      {% for item in cv.projects %}
-      <article class="cv-project">
-        <h3 class="no_toc">{{ item.title | escape }}</h3>
-        <p>{{ item.summary | escape }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
   <section class="cv-section cv-section--details">
     <div class="cv-section__heading">
       <p>Toolkit</p>

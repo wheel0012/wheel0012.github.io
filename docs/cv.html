@@ -97,18 +97,6 @@ permalink: /cv/
     </div>
   </section>
 
-  <section class="print-section">
-    <h2>Selected Projects</h2>
-    <div class="print-section__body print-projects">
-      {% for item in cv.projects %}
-      <article class="print-project">
-        <h3>{{ item.title | escape }}</h3>
-        <p>{{ item.summary | escape }}</p>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
   <section class="print-section print-section--technical">
     <h2>Technical Background</h2>
     <dl class="print-details">
